@@ -353,6 +353,7 @@ button {
     transform: translateX(115%);
     transform-origin: left center;
   }
+
   to {
     transform: translateX(-115%);
     transform-origin: right center;
@@ -361,4 +362,42 @@ button {
 
 .buy .buy-btn {
   margin: 0 auto;
+}
+
+.equipment {
+  margin-bottom: 100px;
+}
+
+.equipment__title {
+  margin-bottom: 50px;
+}
+
+.section__title {}
+
+.equipment__box {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.equipment__box-item {}
+
+.equipment__box-item--one {
+  grid-row: 1/-1;
+}
+
+.equipment__box-img {
+  margin-bottom: 10px;
+}
+
+.equipment__box-text {}
+
+.equipment__box-title {
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  line-height: 50px;
+  text-transform: uppercase;
 }
