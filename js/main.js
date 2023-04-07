@@ -1,5 +1,7 @@
 "use strict";
 
+
+// tabs functionality
 const tabItem = document.querySelectorAll(".tabs__btn-item");
 const tabContent = document.querySelectorAll(".tabs__content-item");
 
@@ -22,3 +24,14 @@ function open(evt) {
   tabTarget.classList.add('tabs__btn-item--active')
   document.querySelector(`#${button}`).classList.add('tabs__content-item--ative')
 }
+
+
+
+//adaptive button functionality
+
+const menuBtn = document.querySelector('.menu-btn')
+const menu = document.querySelector('.menu')
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('menu--active')
+})
